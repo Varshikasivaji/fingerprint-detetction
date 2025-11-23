@@ -3,13 +3,13 @@
 CNN-based fingerprint image processing system for blood group classification
 # Enhanced AI-Based Blood Group Detection Using Fingerprints
 
-## 📌 Abstract
+## Abstract
 This project proposes a novel method to predict an individual’s blood group from fingerprint patterns using advanced image and signal processing techniques. High-resolution fingerprint images are captured and processed through histogram equalization, noise removal, ridge enhancement, and feature extraction. The extracted features are analyzed and classified using a Convolutional Neural Network (CNN) and ResNet architecture.  
 The primary objective of the system is to provide a **non-invasive, rapid, and cost-effective alternative** to conventional blood group detection by identifying unique correlations between fingerprint characteristics and blood groups.
 
 ---
 
-## 🧠 Technologies Used
+## Technologies Used
 - **Python**
 - **CNN / ResNet**
 - **OpenCV**
@@ -19,7 +19,7 @@ The primary objective of the system is to provide a **non-invasive, rapid, and c
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 Enhanced-AI-BloodGroup-Detection/
 │── src/
 │ ├── preprocessing.py
@@ -30,7 +30,7 @@ Enhanced-AI-BloodGroup-Detection/
 
 ---
 
-## 🌐 Dataset
+##  Dataset
 A **limited number of fingerprint images** are uploaded directly to the repository in the `sample_dataset/` folder.  
 These are included for demonstration and testing.
 
@@ -40,11 +40,11 @@ If you later plan to include a full dataset:
 
 ---
 
-## 🔍 Methodology / Proposed System
-### ✔️ **1. Data Acquisition**
+##  Methodology / Proposed System
+###  **1. Data Acquisition**
 High-resolution fingerprint images are collected through scanners or mobile-based fingerprint capture systems.
 
-### ✔️ **2. Preprocessing**
+###  **2. Preprocessing**
 - Grayscale conversion  
 - Histogram Equalization  
 - Gaussian/Median Noise Filtering  
@@ -52,25 +52,25 @@ High-resolution fingerprint images are collected through scanners or mobile-base
 - Image Normalization  
 - ROI detection & cropping  
 
-### ✔️ **3. Feature Extraction**
+###  **3. Feature Extraction**
 - Minutiae Analysis  
 - Ridge Orientation & Frequency  
 - Texture Features  
 - Gabor / Sobel / Canny filters  
 - Deep feature extraction using pre-trained **ResNet**
 
-### ✔️ **4. Classification**
+###  **4. Classification**
 A hybrid CNN–ResNet model is used:
 - CNN for spatial fingerprint feature extraction  
 - ResNet layers for deeper pattern learning  
 - Softmax output for blood group prediction (A, B, AB, O, Rh±)
 
-### ✔️ **5. Output**
+###  **5. Output**
 Predicted blood group is displayed along with confidence score.
 
 ---
 
-## 🧠 Model Architecture (Summary)
+##  Model Architecture (Summary)
 - **Input Layer**: 128×128 or 224×224 grayscale fingerprint  
 - **Convolution Layers** (Feature extraction)  
 - **Batch Normalization & ReLU Activation**  
@@ -82,7 +82,7 @@ Predicted blood group is displayed along with confidence score.
 
 ---
 
-## ▶️ How to Run the Project
+##  How to Run the Project
 
 ### **1. Install Dependencies**
 
@@ -95,7 +95,7 @@ or
 
 ---
 
-## 📊 Results (Template – you can fill this later)
+##  Results (Template – you can fill this later)
 | Model | Accuracy | Dataset Size | Preprocessing | Notes |
 |-------|----------|--------------|----------------|--------|
 | CNN (Custom) | --% | -- images | Basic filtering | Initial testing |
@@ -105,7 +105,7 @@ Add your real values once you complete training.
 
 ---
 
-## 📐 Block Diagram (Text Version)
+##  Block Diagram (Text Version)
 Fingerprint Input
 ↓
 Preprocessing
@@ -120,25 +120,25 @@ Blood Group Prediction (A, B, AB, O)
 
 ---
 
-## 👨‍💻 Contributors
+##  Contributors
 - **Your Name** (Lead Developer & Researcher)  
 (Add more names if team members exist)
 
 ---
 
-## 📜 License
+##  License
 This project is released under the **MIT License**.  
 Users may use, modify, and distribute the code with proper attribution.
 
 ---
 
-## 📢 Citation
+##  Citation
 If used for research, please cite:
 
 
 ---
 
-## ⭐ Suggestions / Future Scope
+##  Suggestions / Future Scope
 - Integrating mobile-app based fingerprint scanning  
 - Deploying model as a web API  
 - Expanding dataset size for higher accuracy  
